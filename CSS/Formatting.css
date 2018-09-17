@@ -1,0 +1,49 @@
+/*THIS FILE INCLUDES*/
+/*ALL Elements not relating to links, menus, or images that are links
+Basically everything that if you click, does nothing*/
+
+
+/* The header text section for front page */
+#header, #header2 {
+	text-align: center;
+	text-shadow: 2px 3px black;
+	background-repeat: no-repeat;
+}
+
+#header {
+	background-image: url("../Images/waves_bg2.jpg");
+	padding-top: 105px;
+	padding-bottom: 75px;	
+	background-size: 100% 400px;
+}
+
+#header2 {
+	background-image: url("../Images/waves_bg2.jpg");
+	padding-top: 75px;
+	padding-bottom: 50px;
+	background-size: 100% 350px;
+}
+
+h1{ 
+	font-family: "Impact";
+	color:  #66FCF1;
+	letter-spacing: 5px;
+	font-size: 60px;
+	transform: scaleY(1.5);
+	transform: scaleX(1.1);
+}
+
+h2{ 
+	color:  #C5C6C7;
+}
+
+p {
+	text-align: center;
+	color: #C5C6C7;
+	background-color: #0B0C10;
+}
+
+body{
+	margin: 0px;
+	overflow-x: hidden;
+}
