@@ -25,12 +25,10 @@ Basically everything that if you click, does nothing*/
 	padding-bottom: 50px;
 
 }
-
 #body_block{
 	background-color: white;
 	margin: 10%;
 	margin-top: 0px;
-	margin-bottom: 0px;
 }
 
 h1{ 
@@ -54,9 +52,11 @@ h3{
 
 p {
 	text-align: center;
-	color: black;
-	margin-bottom: 0px;
-	padding: 10px;
+	color: #e2fffe;
+	background-color: #0B0C10;
+	margin-bottom: 10px;
+	padding: 20px;
+	padding-top: 10px;
 }
 
 body{
