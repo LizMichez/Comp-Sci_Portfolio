@@ -11,17 +11,26 @@ Basically everything that if you click, does nothing*/
 }
 
 #header {
-	background-image: url("../Images/waves_bg2.jpg");
+	background-image: url("../Images/stars_bg.jpg");
+	background-attachment: fixed;
 	padding-top: 105px;
-	padding-bottom: 75px;	
-	background-size: 100% 400px;
+	padding-bottom: 65px;	
+	margin-bottom: 0px;
 }
 
 #header2 {
-	background-image: url("../Images/waves_bg2.jpg");
+	background-image: url("../Images/stars_bg.jpg");
+	background-attachment: fixed;
 	padding-top: 75px;
 	padding-bottom: 50px;
-	background-size: 100% 350px;
+
+}
+
+#body_block{
+	background-color: white;
+	margin: 10%;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 h1{ 
@@ -35,15 +44,25 @@ h1{
 
 h2{ 
 	color:  #C5C6C7;
+	text-align: center;
+}
+
+h3{
+	color: #0B0C10;
+	text-align: center;
 }
 
 p {
 	text-align: center;
-	color: #C5C6C7;
-	background-color: #0B0C10;
+	color: black;
+	margin-bottom: 0px;
+	padding: 10px;
 }
 
 body{
+	background-image: url("../Images/stars_bg.jpg");
+	background-attachment: fixed;
 	margin: 0px;
 	overflow-x: hidden;
+
 }
