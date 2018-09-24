@@ -3,7 +3,7 @@
 Basically everything that if you click, does nothing*/
 
 
-/* The header text section for front page */
+/* The header text section for front page and other sub pages */
 #header, #header2 {
 	text-align: center;
 	text-shadow: 2px 3px black;
@@ -24,39 +24,82 @@ Basically everything that if you click, does nothing*/
 	padding-top: 75px;
 	padding-bottom: 50px;
 
+/* To get the body to be all indented and cool*/
 }
 #body_block{
 	background-color: white;
-	margin: 10%;
+	margin: 12.5%;
 	margin-top: 0px;
 }
+/*-------------------------------------------------*/
+/* For the grid layout on the home page*/
+.small-grid {
+  display: grid;
+  grid-template-columns: 33.333% 33.333% 33.333%;
+  padding: 10px;
+}
+
+.sgrid-item {
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  padding: 20px;
+  font-family: "Arial Narrow" ;
+  font-size: 16px;
+  text-align: left;
+}
+/*-------------------------------------------------*/
+
+/* For the grid layout on assignments*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 10px;
+}
+
+.grid-item {
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  padding: 20px;
+  font-family: "Arial Narrow" ;
+  font-size: 16px;
+  text-align: left;
+}
+/*-------------------------------------------------*/
 
 h1{ 
 	font-family: "Impact";
 	color:  #66FCF1;
 	letter-spacing: 5px;
 	font-size: 60px;
-	transform: scaleY(1.5);
-	transform: scaleX(1.1);
+	
 }
 
 h2{ 
+	font-family: "Arial Narrow" ;
 	color:  #C5C6C7;
 	text-align: center;
 }
 
 h3{
+	font-family: "Impact";
+	font-size: 25px;
 	color: #0B0C10;
 	text-align: center;
 }
+h4{
+	font-family: "Impact";
+	font-size: 20px;
+	color: #0B0C10;
+	text-align: left;
+}
 
 p {
+	font-family: "Arial Narrow" ;
 	text-align: center;
 	color: #e2fffe;
 	background-color: #0B0C10;
 	margin-bottom: 10px;
 	padding: 20px;
 	padding-top: 10px;
+	line-height: 15px;
 }
 
 body{
