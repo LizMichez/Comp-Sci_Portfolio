@@ -37,6 +37,7 @@ Basically everything that if you click, does nothing*/
   display: grid;
   grid-template-columns: 33.333% 33.333% 33.333%;
   padding: 10px;
+  overflow-x: hidden;
 }
 
 .sgrid-item {
@@ -48,7 +49,7 @@ Basically everything that if you click, does nothing*/
 }
 /*-------------------------------------------------*/
 
-/* For the grid layout on assignments*/
+/* For the grid layout on assignments and independant projects*/
 .grid-container {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -63,6 +64,13 @@ Basically everything that if you click, does nothing*/
   text-align: left;
 }
 /*-------------------------------------------------*/
+#about_me{
+	padding: 20px;
+	font-family: "Arial Narrow" ;
+	font-size: 16px;
+	text-align: center;
+
+}
 
 h1{ 
 	font-family: "Impact";
@@ -81,20 +89,21 @@ h2{
 h3{
 	font-family: "Impact";
 	font-size: 25px;
-	color: #0B0C10;
+	color: #1f1f33;
 	text-align: center;
+	letter-spacing: 2px;
 }
 h4{
 	font-family: "Impact";
 	font-size: 20px;
-	color: #0B0C10;
-	text-align: left;
+	color: #1f1f33;
+
 }
 
 p {
 	font-family: "Arial Narrow" ;
 	text-align: center;
-	color: #e2fffe;
+	color: #C5C6C7;
 	background-color: #0B0C10;
 	margin-bottom: 10px;
 	padding: 20px;
@@ -108,4 +117,7 @@ body{
 	margin: 0px;
 	overflow-x: hidden;
 
+}
+ul1{
+	list-style-type: none;
 }
