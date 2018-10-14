@@ -64,6 +64,7 @@ columns containing the clicky images*/
 /* This is for all the buttons*/
 /*This is for the read more one on assignments*/
 #more {display: none;}
+#moreB {display: none;}
 
 .readMorebtn{
     background-color: white;
