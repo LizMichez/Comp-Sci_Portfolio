@@ -1,0 +1,136 @@
+#header3 {
+	background-image: url("../Images/stars_bg.jpg");
+	background-attachment: fixed;
+	padding-top: 100px;
+	padding-bottom: 50px;
+
+}
+/* THIS IS THE OUTLINE GRID FORMAT THINGY*/
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(11, minmax(100px, max-content));
+  padding: 20px;
+  font-family: "Arial Narrow" ;
+  color: #C5C6C7;
+  font-size: 16px;
+  text-align: center;
+}
+
+.intro {
+  	padding: 10px;
+ 	overflow-x: hidden;
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+
+.Q1 {
+	padding: 20px;
+	overflow-x: hidden;
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+
+.Q1-1{
+	grid-column-start: -7;
+	grid-column-end: 3;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.Q1-2{
+	grid-column-start: -5;
+	grid-column-end: 5;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.Q1-3{
+	grid-column-start: -3;
+	grid-column-end: 7;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.Q2-1{
+	grid-column-start: -7;
+	grid-column-end: 4;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.Q2-2{
+	grid-column-start: -4;
+	grid-column-end: 7;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.chartPics{
+	width: 95%;
+	padding-top: 10px;
+}
+
+/* ---------------------------- */
+body{
+	background-color: #0B0C10;
+}
+
+p{
+	font-family: "Arial Narrow" ;
+	text-align: center;
+	color: #C5C6C7;
+	margin-bottom: 10px;
+	padding: 20px;
+	padding-top: 10px;
+	line-height: 15px;
+}
+
+h1{ 
+	font-family: "Impact";
+	color:  #66FCF1;
+	letter-spacing: 5px;
+	font-size: 60px;
+	
+}
+
+h2{ 
+	font-family: "Arial Narrow" ;
+	color:  #C5C6C7;
+	text-align: center;
+}
+
+h3{
+	font-family: "Impact";
+	font-size: 25px;
+	color: #1f1f33;
+	text-align: center;
+	letter-spacing: 2px;
+}
+h4{
+	font-family: "Impact";
+	font-size: 20px;
+	color: #1f1f33;
+
+}
+
+h5{
+	font-family: "Impact";
+	color: #C5C6C7;
+	letter-spacing: 10px;
+	font-size: 50px;
+	text-shadow: 2px 2px  #0B0C10;
+	text-align: center;
+	margin: 0px;
+}
+hr{
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	border-color: #1F2833;
+}
+
+ul{
+	text-align: left;
+}

@@ -5,7 +5,7 @@ prompt ("What is your quest?");
 var swallow = prompt ("What is the airspeed of an unladen swallow?"); //Declares the variable swallow, swallow best bird
 
 if (swallow == "African or European?"){
-	alert ("ah a true intellectual. Welcome to the land of buttons " + name + ", pleasure having you");
+	alert ("Ah a true intellectual. Welcome to the land of buttons " + name + ", pleasure having you");
 } else if (swallow == "african or european?") {
 	alert ("Both 'african' and 'european' should have been capitalized, but a solid effort none the less. Welcome aboard " + name);
 } else {
@@ -21,7 +21,7 @@ function changeText(){
 	var phrase = Math.floor((Math.random() * 5) + 1);
 	var sayHello = document.getElementById("greet"); //Declares the variable sayHello, which is for the greeting on the home page
 	if (phrase == 1){
-		sayHello.innerHTML = "Dearest friends " + name + " please enjoy your stay";
+		sayHello.innerHTML = "Dearest friend " + name + " please enjoy your stay";
 	} else if (phrase == 2) {
 		sayHello.innerHTML = "Don't blow the place up " + name;
 	} else if (phrase == 3) {
@@ -52,6 +52,10 @@ function blue(){
 function violet(){
 	document.body.style.backgroundColor = "#ff00ec";}
 
+// function randomC(){
+// 	document.body.style.backgroundColor = rgb(Math.floor((Math.random() * 254) + 1), Math.floor((Math.random() * 254) + 1), Math.floor((Math.random() * 254) + 1),);
+// }
+
 //The stories of the world
 function storyTime(){
 	var livingThing = prompt("Enter the name of a living thing (duck, cat, ect..)");
@@ -71,7 +75,7 @@ function storyTime(){
 		storiesText.innerHTML = "The story of the dragon. Once apon a time there was a " + adjective + " dragon named " + storyName + ". " + gender + " lived in a land called " + place + ". One day as " + gender + " was " + verb + " " + gender + " saw a " + livingThing + ". It was the most amazing " + livingThing + " that " + storyName + " had ever seen and " + gender +" began to " + verbSecond + "ing towards it. Then " + storyName + " ate the " + livingThing + ". The end.";
 	
 	} else if (storyChooser == 2) {
-		storiesText.innerHTML = "The story of the duck. Tere once was a duck named " + storyName + " the great." + gender + " lived in " + place + " and ever day " + gender + " ate." + gender + " liked to " + verb + " and " + gender + " liked to " + verbSecond + ". One day the " + livingThing + " said to " + storyName + ": I think you are the " + adjective + "est duck of them all. And " + storyName + " was happy, " + gender + " went and had a ball. The end.";
+		storiesText.innerHTML = "The story of the duck. There once was a duck named " + storyName + " the great." + gender + " lived in " + place + " and ever day " + gender + " ate." + gender + " liked to " + verb + " and " + gender + " liked to " + verbSecond + ". One day the " + livingThing + " said to " + storyName + ": I think you are the " + adjective + "est duck of them all. And " + storyName + " was happy, " + gender + " went and had a ball. The end.";
 
 	} else if (storyChooser == 3) {
 		storiesText.innerHTML = "The short story. " + storyName + " was the most " + adjective + " " + livingThing + " in all of " + place + ". Because of this he " + verb + "s and " + verbSecond + "s all day long. Pretty weird eh? The end.";
@@ -80,7 +84,15 @@ function storyTime(){
 		storiesText.innerHTML = "The story of school. When people were talking after a test about the answers it was quite worrysome. Because they wondered if it was " + verb + " or " + verbSecond + "." + storyName + " the " + adjective + " person in the " + place + " convinced them it was " + verb + ". I got " + livingThing + ". The end.";
 
 	 } else if (storyChooser == 5) {
-	 	storiesText.innerHTML = "What are you doing " + name + ". Seriously, like who even plays this game anymore. Even if they do who the heck chooses words like:" + adjective + ", " + livingThing + ", " + storyName + ", " + verb + ", " + place + ", and " + verbSecond + "Man what a strange person you are.";
+	 	storiesText.innerHTML = "What are you doing " + name + ". Seriously, like who even plays this game anymore. Even if they do who the heck chooses words like: " + adjective + ", " + livingThing + ", " + storyName + ", " + verb + ", " + place + ", and " + verbSecond + ". Man what a strange person you are.";
 	} 
 
 }
+
+//Number games
+// function numGuess() {
+//     var x = document.createElement("INPUT");
+//     x.setAttribute("type", "number");
+//     x.setAttribute("value", "12345");
+//     document.body.append(x);
+// }
