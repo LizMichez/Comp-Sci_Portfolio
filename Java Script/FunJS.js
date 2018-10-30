@@ -27,7 +27,7 @@ function changeText(){
 	} else if (phrase == 3) {
 		sayHello.innerHTML = "Why are you here " + name + "?";
 	} else if (phrase == 4) {
-		sayHello.innerHTML = "I see you have found me" + name ;
+		sayHello.innerHTML = "I see you have found me " + name ;
 	}else{
 		sayHello.innerHTML = "Hey there " + name + ", how do I get out of here?";
 	}
