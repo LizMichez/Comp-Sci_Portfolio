@@ -75,3 +75,22 @@ columns containing the clicky images*/
     cursor: pointer;
 
 }
+/*This is for neutral buttons on assignemnt page*/
+.JSPractice{
+    background-color: #e2fffe;
+    font-family: "Arial Narrow" ;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 5%;
+    border-color: #1F2833;
+    width: 75px;
+    height: 75px;
+}
+
+.JSPractice:hover{
+    box-shadow: 5px 6px grey;
+    transform: scale(1.05);
+}

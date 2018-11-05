@@ -65,6 +65,16 @@ Basically everything that if you click, does nothing*/
   text-align: left;
   overflow-x: hidden;
 }
+/*The thingy for the FizzBuzz*/
+.fizzBuzz{
+	max-height: 300px;
+}
+
+#myList{
+	list-style-type: none;
+}
+/*-------------------------------------------*/
+
 /*-------------------------------------------------*/
 #about_me{
 	padding: 20px;
