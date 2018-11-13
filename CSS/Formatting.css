@@ -4,13 +4,14 @@ Basically everything that if you click, does nothing*/
 
 
 /* The header text section for front page and other sub pages */
+/*The header sections are the part that has no background and containes the title and opening*/
 #header, #header2 {
 	text-align: center;
 	text-shadow: 2px 3px black;
 	background-repeat: no-repeat;
 }
 
-#header {
+#header { /*For the main page*/
 	background-image: url("../Images/stars_bg.jpg");
 	background-attachment: fixed;
 	padding-top: 105px;
@@ -18,7 +19,7 @@ Basically everything that if you click, does nothing*/
 	margin-bottom: 0px;
 }
 
-#header2 {
+#header2 { /*For the sub pages*/
 	background-image: url("../Images/stars_bg.jpg");
 	background-attachment: fixed;
 	padding-top: 75px;
@@ -58,7 +59,6 @@ Basically everything that if you click, does nothing*/
 }
 
 .grid-item {
-/*  border: 1px solid rgba(0, 0, 0, 0.8);*/
   padding: 20px;
   font-family: "Arial Narrow" ;
   font-size: 16px;
@@ -89,7 +89,7 @@ Basically everything that if you click, does nothing*/
 }
 
 
-h1{ 
+h1{ /*Main greeting*/
 	font-family: "Impact";
 	color:  #66FCF1;
 	letter-spacing: 5px;
@@ -97,27 +97,27 @@ h1{
 	
 }
 
-h2{ 
+h2{ /*Introduction font*/
 	font-family: "Arial Narrow" ;
 	color:  #C5C6C7;
 	text-align: center;
 }
 
-h3{
+h3{ /*For the subheadings on the main page*/
 	font-family: "Impact";
 	font-size: 25px;
 	color: #1f1f33;
 	text-align: center;
 	letter-spacing: 2px;
 }
-h4{
+h4{ /*Sub headings on About me page*/
 	font-family: "Impact";
 	font-size: 20px;
 	color: #1f1f33;
 
 }
 
-h5{
+h5{ /*Sub headings on some really cool page which im really not sure about*/
 	font-family: "Impact";
 	color: black;
 	letter-spacing: 5px;
@@ -125,7 +125,7 @@ h5{
 	text-align: center;
 }
 
-p {
+p { /*Paragraphs*/
 	font-family: "Arial Narrow" ;
 	text-align: center;
 	color: #C5C6C7;
@@ -136,13 +136,13 @@ p {
 	line-height: 15px;
 }
 
-body{
+body{ /*Just the background for the body*/
 	background-image: url("../Images/stars_bg.jpg");
 	background-attachment: fixed;
 	margin: 0px;
 	overflow-x: hidden;
 
 }
-ul1{
+ul1{ /*A random list on assignments*/
 	list-style-type: none;
 }

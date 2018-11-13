@@ -11,7 +11,7 @@
 </head> 
 <body>
 
-<!--This bit is for the top nevigation bar-->
+<!--This bit is for the top nevigation bar, it links all the pages, makes the current one active, and gives them text-->
 <div class="topnav">
   <a href="../index.html">Home</a>
   <a class="active" href="Assignments.html">Assignments</a>
@@ -19,19 +19,21 @@
   <a href="IP.html">Independant Projects</a>
 </div> 
 
+<!--This covers the header/not body block section-->
 <div id = "header2">
 <h1>Assignments</h1>
 <h2>The many programming assignments completed in ICS3U</h2>
 </div>
 
+<!--This is the body where the list of assignments wil be-->
 <div id = "body_block">
 	<p>In this assignments section you will be able to find all the assignments 
 	completed in ICS3U, <br>
 	and in the future from ICS4U as well.</p>
 
 
-	<div class="grid-container">
-  		<div class="grid-item">
+	<div class="grid-container"> <!--Begins chart that containes the list of assignments-->
+  		<div class="grid-item"> <!--Assignment 1--> 
   			<img src="../Images/assign1.jpg" alt="assign1" class="Assign_Pics">
   		</div>
  		<div class="grid-item">
@@ -94,7 +96,7 @@
  			<button onclick="readMoreA()" id="readMorebtn" class="readMorebtn">Read More</button> 
 
  		</div>
-  		<div class="grid-item">
+  		<div class="grid-item"> <!--Assignment 2-->
   			<a href="https://scratch.mit.edu/projects/249571325/#player" target="_blank">
   				<img src="../Images/ScratchGame.PNG" alt="assign2" class="Assign_Pics">
   			</a>
@@ -103,7 +105,7 @@
   			<h4> Assignment 2 - Scratch Game</h4>
  			2018-10-10 <br>
  			For this assignment we were tasked with creating a game in scrach which fit a set of criteria. The game I made is called Penguin 101 where you are a little penguin and can play mini games and buy items from a shop. Below is the peer feedback I recived along with some of my responses. To play the game click the image to the left<span id="dotsB">...</span> <br>
- 			<span id="moreB"> <br>
+ 			<span id="moreB"> <br> <!--Read more section below-->
  			<b>Owen:</b>
  			<ul>
  				<li>I really like the store (The wizard hat makes me very happy) </li> <br>
@@ -157,7 +159,7 @@
  			<button onclick ="readMoreB()" id="readMorebtnB" class="readMorebtn">Read More</button>
 
   		</div>
-  		<div class="grid-item">
+  		<div class="grid-item"> <!--Assignment 3-->
   			<a href = "Asign3.html">
   				<img src="../Images/JS2.png" alt="assign3" class="Assign_Pics">
   			</a>
@@ -170,18 +172,18 @@
  			Because there was too much text to put in a read-more button, click the link to go to a nice formatted page 
  			with all the questions, answers, and images.
   		</div>
- 		<div class="grid-item">
+ 		<div class="grid-item"> <!--Assigmnent 4-->
  			<img src="../Images/loops.png" alt="assign4" class="Assign_Pics">
  		</div>
   		<div class="grid-item">
-  			<h4> Assignment 4 - Javascript Loops</h4>
+  			<h4> Assignment 4 - Javascript Loops</h4> 
 
   			2018-11-01 <br>
  			For this assignment we had to complete some exercises with 'for' and 'while' loops. The only ones that were required to be included on the page are the Exersise 3 and Exersise 4  buttons. The others are just because I felt like including them. To play the games / game-like-things click the buttons below. <br>
- 			<button onclick = "bigger()" id="JSPractice1" class="JSPractice">Exersise 1</button>
- 			<button onclick = "order()" id="JSPractice2" class="JSPractice">Exersise 2</button>
- 			<button onclick = "fizzBuzz()" id="JSPractice3" class="JSPractice">Exersise 3</button>
- 			<button onclick = "astrix()" id="JSPractice4" class="JSPractice">Exersise 4</button>
+ 			<button onclick = "bigger()" id="JSPractice1" class="JSPractice">Exersise 1</button> <!--Imput two, get the greater-->
+ 			<button onclick = "order()" id="JSPractice2" class="JSPractice">Exersise 2</button> <!--Orders three letters-->
+ 			<button onclick = "fizzBuzz()" id="JSPractice3" class="JSPractice">Exersise 3</button> <!--Plays the game FizzBuzz-->
+ 			<button onclick = "astrix()" id="JSPractice4" class="JSPractice">Exersise 4</button> <!--PRints an astrix pyramid-->
 
  			<br>
  			<div class="grid-container">
