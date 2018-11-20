@@ -6,7 +6,7 @@
 	<link rel= "stylesheet" type="text/css" href = "../CSS/Formatting_Menus.css">
 	<link rel= "shortcut icon" type="image/png" href = "../Images/icon2.png">
 	<script type="text/javascript" src="../Java Script/Buttons.js"></script>
-	<script type="text/javascript" src="../Java Script/GTN.js"></script>
+	<script type="text/javascript" src="../Java Script/GTN2.js"></script>
 
 </head> 
 
@@ -27,12 +27,22 @@
 
 <div class="grid-container">
 	<div class="intro">
-		<button onclick = "GTN()" id="GTN" class="playButton">Guess The Number</button>
+		<div id="deGame">
+			<button onclick = "startGame()" id="GTN" class="playButton">Click to Play!</button>
+			<p id = "response"> </p>
+
+			<form>
+		  		<input type="number" id="enterGuess"><br>
+			</form>
+
+			<button onclick = "guessNum()" id="enter" class="enterButton">Enter Number</button>
+		</div>
 	</div>
+
 	<audio controls id="audio">
 	  <source src="../Images/Yay-Sound-Effect.mp3" type="audio/mpeg">
-	  	idk what this does
 	</audio> 
+
 	<div class="Q1">
 		<canvas id="myCanvas"></canvas>
 	</div>
