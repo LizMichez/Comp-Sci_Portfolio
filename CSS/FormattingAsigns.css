@@ -8,16 +8,49 @@
 	padding-bottom: 50px;
 
 }
-/* THIS IS THE OUTLINE GRID FORMAT THINGY*/
+/*The canvas for the Guess The Number game*/
+
+#myCanvas{
+	height: 150px;
+	width: 375px;
+	margin-left: 425px;
+	padding: 0px;
+}
+
+/*This is for the Guess The Number Button*/
+#GTN{
+    background-color: #0B0C10;
+    color: white;
+    font-family: "Arial Narrow" ;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5%;
+    border-color: #0B0C10;
+    height:150px;
+    vertical-align: top;
+    margin-left: 475px;
+}
+
+#audio{
+	display: none;
+}
+/* THIS IS THE OUTLINE GRID FORMAT THINGY ON ASSIGMENT 3*/
 .grid-container {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(11, minmax(100px, max-content));
-  padding: 20px;
-  font-family: "Arial Narrow" ;
-  color: #C5C6C7;
-  font-size: 16px;
-  text-align: center;
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: repeat(11, minmax(100px, max-content));
+	padding: 20px;
+	font-family: "Arial Narrow" ;
+	color: #C5C6C7;
+	font-size: 16px;
+	text-align: center;
+}
+/* THIS IS THE OUTLINE GRID FORMAT THINGY ON ASSIGMENT 5*/
+.grid-container {
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(2, minmax(200px, max-content));
+	padding: 20px;
 }
 
 .intro { /*Spans all rows*/
@@ -76,10 +109,11 @@
 
 /* ---------------------------- */
 body{
-	background-color: #0B0C10;
+	background: #0B0C10;
+    
 }
 
-/*All the fonts and stuff, aside from paragraph i litterally coppied it off another doccument im not even sure why*/
+/*All the fonts and stuff, aside from paragraph I litterally coppied it off another doccument im not even sure why*/
 p{
 	font-family: "Arial Narrow" ;
 	text-align: center;
@@ -135,6 +169,13 @@ hr{
 	border-color: #1F2833;
 }
 
-ul{
-	text-align: left;
+@keyframes rainbow{ /*Rainbow background animation*/
+    0% {background-color: red}
+    14%{background-color: orange}
+    28%{background-color: yellow}
+    42%{background-color: green}
+    56%{background-color: blue}
+    70%{background-color: indigo}
+    84%{background-color: hotpink}
+    100% {background-color: red}
 }

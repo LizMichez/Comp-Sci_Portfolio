@@ -1,7 +1,7 @@
 //ASSIGNMENTS PAGE
 //This is for the read more button on assignment1
 function readMoreA() {
-  var dots = document.getElementById("dots"); //Calles the items within the tags with id dots and makes it the variable dots 
+  var dots = document.getElementById("dots"); //Calls the items within the tags with id dots and makes it the variable dots 
   var moreText = document.getElementById("more"); //Calls the items within the tages with id dots and makes it hte variable moreText
   var btnText = document.getElementById("readMorebtn"); //Calls the text in a button and makes it the varable btnText
 

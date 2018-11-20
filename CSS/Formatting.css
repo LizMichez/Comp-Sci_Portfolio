@@ -73,6 +73,8 @@ Basically everything that if you click, does nothing*/
 #myList{
 	list-style-type: none;
 }
+
+
 /*-------------------------------------------*/
 
 /*-------------------------------------------------*/
@@ -114,6 +116,7 @@ h4{ /*Sub headings on About me page*/
 	font-family: "Impact";
 	font-size: 20px;
 	color: #1f1f33;
+	margin-bottom: 10px;
 
 }
 
