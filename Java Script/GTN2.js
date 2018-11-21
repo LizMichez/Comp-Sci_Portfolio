@@ -34,15 +34,18 @@ function guessNum(){
 				onGuess++; //Increace the variable onGuess by one
 				response.innerHTML = guess + " was too low! Try again. You're on guess number " +onGuess; //sets paragraph text
 				tries++; //Increace the variable tries by one
+				document.getElementById("enterGuess").value = "";
 				
 			} else if(guess > num){//If the guess is higher than the number
 				onGuess++; //Increace the variable onGuess by one
 				response.innerHTML = guess + " was too high! Try again. You're on guess number " +onGuess;//sets paragraph text
 				tries++; //Increace the variable tries by one
-				
+				document.getElementById("enterGuess").value = "";
+
 			} else if(guess == num){ //If a person guesses the number
 				writeText("WINNER!!!"); //Writes text on the canvas
 				response.innerHTML = "Yay! You got it in " + tries + " tries!"; //sets paragraph text
+				document.getElementById("enterGuess").value = "";
 				document.getElementById("GTN").innerHTML = "Play Again?"; //sets button text
 
 				if(tries == 1){ //If a person got it with one try
@@ -60,10 +63,11 @@ function guessNum(){
 				}
 
 			} else if(guess === "q"){ //If a person enters the letter q
-				// break; //Break the loop
+
 
 			}else if(isNaN(guess) || int(guess) > 1000){ //If someone enters an invalid guess
 				response.innerHTML = "Invalid input. Try again";//gives an alert
+				document.getElementById("enterGuess").value = "";
 				tries++; //increaces the value of tries by one
 			}
 	}
