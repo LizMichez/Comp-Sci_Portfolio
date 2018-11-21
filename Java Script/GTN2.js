@@ -17,7 +17,10 @@ function startGame(){
 	num = Math.floor((Math.random() * 1000) + 1); //Gets a random number
 	response = document.getElementById("response"); //Var redeclairs the variable kinda cuz why not
 	response.innerHTML = "Enter a number between 1 and 1000";
-	gamePlaying = true; //Sets gameplaying 
+	gamePlaying = true; //Sets gameplaying
+	guess = 0;
+	tries = 0;
+	onGuess = 1;
 
 	document.getElementById("GTN").innerHTML = "Have Fun!";
 

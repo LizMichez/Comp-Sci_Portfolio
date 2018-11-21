@@ -89,10 +89,18 @@ function storyTime(){
 
 }
 
-//Number games
-// function numGuess() {
-//     var x = document.createElement("INPUT");
-//     x.setAttribute("type", "number");
-//     x.setAttribute("value", "12345");
-//     document.body.append(x);
-// }
+function scramble(){
+
+}
+
+function shift(){
+
+}
+
+function flip(){
+
+}
+
+function dank(){
+
+}
