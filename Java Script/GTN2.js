@@ -6,38 +6,44 @@ var tries = 0; //Declares the variable tries
 var response = document.getElementById("response");
 var guess = 0;
 var gamePlaying = false;
+var onGuess = 1;
 
-
-function startGame(){
+function startGame(){ 
+	/*This function begins the game by making the background the standarc colour
+	Then it gets a random number, assigned values to 4 global variables and changes
+	the button text to Have Fun*/ 
 	document.body.style.background = "#0B0C10";
 
 	num = Math.floor((Math.random() * 1000) + 1); //Gets a random number
-	response = document.getElementById("response");
+	response = document.getElementById("response"); //Var redeclairs the variable kinda cuz why not
 	response.innerHTML = "Enter a number between 1 and 1000";
-	gamePlaying = true;
+	gamePlaying = true; //Sets gameplaying 
 
 	document.getElementById("GTN").innerHTML = "Have Fun!";
 
 }
 
 function guessNum(){
-	if(gamePlaying == true){
-		console.log(num);
+	/*This function checks what the imput is from the from, then it takes that number and
+	compairs it with the random number that was generated. It will tell the user if the number
+	is too high, too low, or exactly what the computer guessed*/ 
+	if(gamePlaying == true){ //If the game is playing
 		guess = parseInt(document.getElementById("enterGuess").value); //Declares the variable guess
 
 		if(guess < num){ //If the guess is lower than the number
-				var lowHigh = "Too low!"; //defines variable lowHigh
-				response.innerHTML = "Too low! Try again."; //gives an alert
+				onGuess++; //Increace the variable onGuess by one
+				response.innerHTML = guess + " was too low! Try again. You're on guess number " +onGuess; //sets paragraph text
 				tries++; //Increace the variable tries by one
-
+				
 			} else if(guess > num){//If the guess is higher than the number
-				var lowHigh = "Too high!"; //defines variable lowHigh
-				response.innerHTML = "Too high! Try again.";//gives an alert
+				onGuess++; //Increace the variable onGuess by one
+				response.innerHTML = guess + " was too high! Try again. You're on guess number " +onGuess;//sets paragraph text
 				tries++; //Increace the variable tries by one
-
+				
 			} else if(guess == num){ //If a person guesses the number
 				writeText("WINNER!!!"); //Writes text on the canvas
-				response.innerHTML = "Yay! You got it in " + tries + " tries!"; //gives an alert	
+				response.innerHTML = "Yay! You got it in " + tries + " tries!"; //sets paragraph text
+				document.getElementById("GTN").innerHTML = "Play Again?"; //sets button text
 
 				if(tries == 1){ //If a person got it with one try
 					response.innerHTML += " Woah you're lucky!"//gives an alert
@@ -64,13 +70,17 @@ function guessNum(){
 }
 
 
-function writeText(text){ //Begins the function to play when somone wins
+function writeText(text){ 
+	/*This function plays an audo clip, writes WINNER! on the canvas, and changes teh backgeound
+	It has some of it's own variables that are only usable in the function, and declairs them at 
+	the beginning*/
+
 	var audio = document.getElementById("audio"); //Defines audio
 	var c = document.getElementById("myCanvas"); //Defines c
 	var ctx = c.getContext("2d"); //Defines ctx
 
 	ctx.font = "25px Arial Narrow"; //Sets the font
-	ctx.fillText(text,40,85); //Writes the text in variable text 40px over and 85px down from the origin
+	ctx.fillText(text,100,85); //Writes the text in variable text 40px over and 85px down from the origin
 
 	audio.play(); //plays variable audio
 	document.body.style.background = "-webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3232), color-stop(16%,#fcf528), color-stop(32%,#28fc28), color-stop(50%,#28fcf8), color-stop(66%,#272ef9), color-stop(82%,#ff28fb), color-stop(100%,#ff3232))";
