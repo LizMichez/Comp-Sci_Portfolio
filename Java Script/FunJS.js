@@ -1,21 +1,21 @@
 //The boot up area, makes some montey python references
-alert ("Hello there traveller");
+// alert ("Hello there traveller");
 var name = prompt ("What is your name?"); //Declares the variable name, which stores the users name
-prompt ("What is your quest?");
-var swallow = prompt ("What is the airspeed of an unladen swallow?"); //Declares the variable swallow, swallow best bird
+// prompt ("What is your quest?");
+// var swallow = prompt ("What is the airspeed of an unladen swallow?"); //Declares the variable swallow, swallow best bird
 
-if (swallow == "African or European?"){
-	alert ("Ah a true intellectual. Welcome to the land of buttons " + name + ", pleasure having you");
-} else if (swallow == "african or european?") {
-	alert ("Both 'african' and 'european' should have been capitalized, but a solid effort none the less. Welcome aboard " + name);
-} else {
-	alert ("smh " + name);
-}
+// if (swallow == "African or European?"){
+// 	alert ("Ah a true intellectual. Welcome to the land of buttons " + name + ", pleasure having you");
+// } else if (swallow == "african or european?") {
+// 	alert ("Both 'african' and 'european' should have been capitalized, but a solid effort none the less. Welcome aboard " + name);
+// } else {
+// 	alert ("smh " + name);
+// }
 
 //This little bit changes the HTML text at the introduction to something personalized for the user
-document.addEventListener("DOMContentLoaded", function(){
-    changeText();
-});
+// document.addEventListener("DOMContentLoaded", function(){
+//     changeText();
+// });
 
 function changeText(){
 	var phrase = Math.floor((Math.random() * 5) + 1);
@@ -52,9 +52,6 @@ function blue(){
 function violet(){
 	document.body.style.backgroundColor = "#ff00ec";}
 
-// function randomC(){
-// 	document.body.style.backgroundColor = rgb(Math.floor((Math.random() * 254) + 1), Math.floor((Math.random() * 254) + 1), Math.floor((Math.random() * 254) + 1),);
-// }
 
 //The stories of the world
 function storyTime(){
@@ -90,17 +87,88 @@ function storyTime(){
 }
 
 function scramble(){
+	var planeText = document.getElementById("encryptorText").value;
+	var broken = planeText.split("");
+	var EncrText = ""
 
+	for(var i = 0; i < broken.length; i+= 1){
+
+	}
+
+	document.getElementById("responseE").innerHTML = EncrText;
 }
 
 function shift(){
+	var planeText = document.getElementById("encryptorText").value;
+	planeText = planeText.toLowerCase();
 
+	var broken = planeText.split("");
+	
+	var EncrText = ""
+	var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+
+	var place = ""
+
+	for(var i = 0; i < broken.length; i+= 1){
+		if(broken[i] == " "){
+			EncrText += " "
+		}else{
+			place = alphabet.indexOf(broken[i])
+
+			if (place + 7 > 25){
+				EncrText += alphabet[6 - (25-place)]
+			} else{
+				EncrText += alphabet[place + 7]
+			}
+		}
+	}
+
+	document.getElementById("responseE").innerHTML = EncrText;
 }
 
 function flip(){
+	var planeText = document.getElementById("encryptorText").value;
+	var broken = planeText.split("");
+	var EncrText = ""
 
+	for(var i = 0; i < broken.length; i+= 1){
+		EncrText += broken[broken.length-1-i]
+	}
+
+	document.getElementById("responseE").innerHTML = EncrText;
 }
 
 function dank(){
+	var planeText = document.getElementById("encryptorText").value;
+	var broken = planeText.split("");
+	var EncrText = ""
 
+	for(var i = 0; i < broken.length; i+= 1){
+		if (broken[i] == "d"){
+			EncrText += broken[i].replace("d", "dank");
+		} else if(broken[i] == "m") 
+			EncrText += broken[i].replace("m", "meme");
+		else {
+			EncrText += broken[i];
+		}
+	}
+
+	document.getElementById("responseE").innerHTML = EncrText;
+}
+
+function theSpeaks(){
+	var words = document.getElementById("enterWords").value;
+	// var words = prompt("Enter your words").toLowerCase();
+	var broken = words.split("");
+	var caplitalized = "";
+
+	for(var i = 0; i < broken.length; i+= 1){
+		if(i % 2 == 0){
+			caplitalized = caplitalized + broken[i].toUpperCase();
+		}
+		else{
+			caplitalized = caplitalized + broken[i];
+		}
+	}
+	document.getElementById("response").innerHTML = caplitalized;
 }
