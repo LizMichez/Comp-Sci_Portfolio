@@ -25,7 +25,7 @@ function ANTIencryptor(){ //This function is the master function for de-encrypti
 	var backFive = shiftBackwards(backFour); //Shifts the text and numbers back
 	
 	document.getElementById("responseD").innerHTML = backFive; //Writes a paragraph element that desplays the answer
-	document.getElementById("encryptorText").value = "";
+	document.getElementById("antiEncryptorText").value = "";
 }
 function shiftForward(textZero){//This function shifts all letters by 7 down the alphabet and all digets by 5 - for encrypting (E1)
 	let broken = textZero.split(""); //Splits the string into an array of its characters
@@ -45,7 +45,7 @@ function shiftForward(textZero){//This function shifts all letters by 7 down the
 
 			if (place + 5 > 9){ //If shifting the number by 5 will make it larger than the max value
 				EncrText += numbers[4 - (9-place)] //Adds the character at the specified position to the output variable
-			} else{ //If shifting hte number keeps it within the string
+			} else{ //If shifting the number keeps it within the string
 				EncrText += numbers[place + 5] //Adds the character at the specified position to the output variable
 			}
 
