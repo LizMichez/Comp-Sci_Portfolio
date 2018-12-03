@@ -12,6 +12,7 @@ function encryptor(){ //This function is the master function for encrypting the 
 	var phaseFive = flipInside(phaseFour); //Flips each individual character / number
 
 	document.getElementById("responseE").innerHTML = phaseFive; //Writes a paragraph element that desplays the answer
+	document.getElementById("encryptorText").value = "";
 }
 
 function ANTIencryptor(){ //This function is the master function for de-encrypting the text (E)
@@ -19,12 +20,12 @@ function ANTIencryptor(){ //This function is the master function for de-encrypti
 	
 	var backOne = flipInside(Enctext); //Flips each individual character / number
 	var backTwo = fromUnicode(backOne); //Converts the text to characters from unicode
-	alert(backTwo);
-	var backThree = fromBase64(backTwo);
-	// var backFour = flipAround(backThree);
-	// var backFive = shiftBackwards(backFour);
+	var backThree = fromBase64(backTwo); //Converts the text back from base64
+	var backFour = flipAround(backThree); //Flips the entire string
+	var backFive = shiftBackwards(backFour); //Shifts the text and numbers back
 	
-	document.getElementById("responseD").innerHTML = backThree; //Writes a paragraph element that desplays the answer
+	document.getElementById("responseD").innerHTML = backFive; //Writes a paragraph element that desplays the answer
+	document.getElementById("encryptorText").value = "";
 }
 function shiftForward(textZero){//This function shifts all letters by 7 down the alphabet and all digets by 5 - for encrypting (E1)
 	let broken = textZero.split(""); //Splits the string into an array of its characters
@@ -97,7 +98,9 @@ function flipInside(textFour){ //This function flips each word - for encrypting 
 		for(var x = 0; x < broken[i].length; x+= 1){ //For as long as the x is lower than the length of the individual string in the array
 			EncrText += broken[i][broken[i].length-1-x] //Adds character at index opposite to x and inside broken[i] to the EncrText
 		}
-		EncrText += " " //Adds a space between each index value of the array broken
+		if (i !== broken.length - 1){
+			EncrText += " " //Adds a space between each index value of the array broken
+		}
 	}
 
 	return EncrText; //Returns the specified variable as the output of the function
@@ -115,7 +118,7 @@ function fromUnicode(textThree){//This function converts the characters from  Un
 }
 
 function fromBase64(textTwo){ //This function puts the characters in base64, a common and build in encryption method - for de-encrypting (D3)
-	return window.atob(textTwo); //Uses a premade function to convert the characters to base 64 and return them
+	return window.atob(textTwo); //Uses a premade function to convert the characters back from base 64
 }
 
 function shiftBackwards(textZero){
