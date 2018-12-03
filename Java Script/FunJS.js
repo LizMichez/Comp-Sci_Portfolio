@@ -86,33 +86,32 @@ function storyTime(){
 
 }
 
-function scramble(){
-	var planeText = document.getElementById("encryptorText").value;
-	var broken = planeText.split("");
-	var EncrText = ""
-
-	for(var i = 0; i < broken.length; i+= 1){
-
-	}
-
-	document.getElementById("responseE").innerHTML = EncrText;
-}
-
 function shift(){
 	var planeText = document.getElementById("encryptorText").value;
 	planeText = planeText.toLowerCase();
 
 	var broken = planeText.split("");
 	
-	var EncrText = ""
-	var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+	var EncrText = "";
+	var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+	var numbers = ["0","1","2","3","4","5","6","7","8","9"];
 
-	var place = ""
+	var place = "";
 
 	for(var i = 0; i < broken.length; i+= 1){
 		if(broken[i] == " "){
 			EncrText += " "
-		}else{
+
+		}else if(numbers.includes(broken[i])){
+			place = numbers.indexOf(broken[i])
+
+			if (place + 5 > 9){
+				EncrText += numbers[4 - (9-place)]
+			} else{
+				EncrText += numbers[place + 5]
+			}
+
+		}else if(alphabet.includes(broken[i])){
 			place = alphabet.indexOf(broken[i])
 
 			if (place + 7 > 25){
@@ -120,6 +119,8 @@ function shift(){
 			} else{
 				EncrText += alphabet[place + 7]
 			}
+		}else{
+			EncrText += broken[i]
 		}
 	}
 

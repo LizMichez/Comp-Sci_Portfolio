@@ -63,6 +63,7 @@
     transform: scale(1.05);
 }
 
+
 /* THIS IS THE OUTLINE GRID FORMAT THINGY ON ASSIGMENT 3*/
 .grid-container {
 	display: inline-grid;
@@ -79,7 +80,8 @@
 	display: inline-grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: repeat(2, minmax(200px, max-content));
-	padding: 20px;
+	padding: 10px;
+	margin: 0px;
 }
 
 .intro { /*Spans all rows*/

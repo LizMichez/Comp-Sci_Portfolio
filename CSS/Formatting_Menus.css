@@ -109,6 +109,7 @@ columns containing the clicky images*/
     background-color: black;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
 }
 
 .IPButton:hover{
@@ -118,6 +119,20 @@ columns containing the clicky images*/
     box-shadow: 5px 6px lightgrey;
     transform: scale(1.05);
 }
+
+.encButton{
+    width: 80%;
+    height: 90px;
+    margin-left: 125px;
+    font-family: "Arial Narrow" ;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
 /*This section is for animations*/
 @keyframes rainbow{ /*Rainbow background animation*/
     0% {background-color: red}
